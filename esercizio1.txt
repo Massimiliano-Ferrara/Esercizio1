@@ -1,0 +1,16 @@
+1)
+per creare la cartella ros2_workspace: mkdir ros2_workspace
+per spostare i file installati da Downloads a ros2_workspace: cd Downloads // mv filebag.zip fileinterfaccia.zip ros2_workspace
+li ho estratti 
+2)
+ per vedere i topic  nel file bag:cd ros2_workspace/rosbag2
+ // ros2 bag info ros2bag
+ // ros 2 topic list
+3_4) Ho aperto manualmente il file .yaml perchè tramite i comandi non riuscivo ad ottenere i topic, e non ho potuto applicare il comando dedicato per conoscere gli Hz.  Ho trovato i topic systeminfo e image, ho visto in totale quante volte hanno pubblicato e conoscendo i nanosecondi totali (sempre scritto all'interno del file) ho potuto calcolare facilmente gli hz (msg/s)
+5) il file contiene dati quali:
+ cpu_usage
+ cpu_temp
+ ram_usage
+ gpu_usage
+ gpu_temp
+ gpuram_usage
